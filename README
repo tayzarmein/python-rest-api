@@ -1,0 +1,30 @@
+How To Set Up Project
+
+1. Create python virtual environment.
+    python3 -m venv ~/.virtualenvs/python-rest-api
+
+2. Change into virtual environment directory
+    cd ~/.virtualenvs/python-rest-api
+
+3. Activate the virtual environment
+    source ./bin/activate
+
+3. Clone this repo
+    git clone https://github.com/tayzarmein/python-rest-api.git mysite
+
+4. Install required modules
+    pip install -r ./mysite/requirements.txt
+
+5. Change into project directory
+    cd ./mysite
+
+6. Run Migration (create required database and table)
+    python manage.py migrate
+
+7. Start the development server
+    python manage.py runserver
+
+8. open http://localhost:8000/ in browser
+ 
+
+
